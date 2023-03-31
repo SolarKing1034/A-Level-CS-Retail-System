@@ -31,12 +31,9 @@ namespace Retail_sys
         {
             this.label10 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txtdeleteitemid = new System.Windows.Forms.TextBox();
             this.txteditstockid = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnDeletItemRec = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
             this.btnReturnMenu = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtNewQuantity = new System.Windows.Forms.TextBox();
@@ -47,7 +44,6 @@ namespace Retail_sys
             this.btnShowallStock = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblStreet = new System.Windows.Forms.Label();
             this.TxtPrice = new System.Windows.Forms.TextBox();
             this.TxtQuantity = new System.Windows.Forms.TextBox();
@@ -58,6 +54,10 @@ namespace Retail_sys
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnNewItemCreation = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnDeletItemRec = new System.Windows.Forms.Button();
+            this.txtdeleteitemid = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label10
@@ -85,17 +85,6 @@ namespace Retail_sys
             this.btnExit.Text = "--> Exit System";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnbegone_Click);
-            // 
-            // txtdeleteitemid
-            // 
-            this.txtdeleteitemid.BackColor = System.Drawing.Color.Black;
-            this.txtdeleteitemid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtdeleteitemid.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdeleteitemid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtdeleteitemid.Location = new System.Drawing.Point(431, 303);
-            this.txtdeleteitemid.Name = "txtdeleteitemid";
-            this.txtdeleteitemid.Size = new System.Drawing.Size(142, 23);
-            this.txtdeleteitemid.TabIndex = 91;
             // 
             // txteditstockid
             // 
@@ -131,32 +120,6 @@ namespace Retail_sys
             this.label3.Size = new System.Drawing.Size(89, 15);
             this.label3.TabIndex = 84;
             this.label3.Text = "New Item Name";
-            // 
-            // btnDeletItemRec
-            // 
-            this.btnDeletItemRec.BackColor = System.Drawing.Color.Black;
-            this.btnDeletItemRec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeletItemRec.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeletItemRec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnDeletItemRec.Location = new System.Drawing.Point(323, 337);
-            this.btnDeletItemRec.Name = "btnDeletItemRec";
-            this.btnDeletItemRec.Size = new System.Drawing.Size(250, 23);
-            this.btnDeletItemRec.TabIndex = 81;
-            this.btnDeletItemRec.Text = "Delete Item\'s Information";
-            this.btnDeletItemRec.UseVisualStyleBackColor = false;
-            this.btnDeletItemRec.Click += new System.EventHandler(this.btnDeletItemRec_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Black;
-            this.label14.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label14.Location = new System.Drawing.Point(369, 268);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(168, 23);
-            this.label14.TabIndex = 80;
-            this.label14.Text = "Delete Item\'s Record";
             // 
             // btnReturnMenu
             // 
@@ -282,18 +245,6 @@ namespace Retail_sys
             this.label11.TabIndex = 70;
             this.label11.Text = "Current Stock Items";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(326, 303);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 15);
-            this.label1.TabIndex = 94;
-            this.label1.Text = "Input Item\'s ID: ";
-            // 
             // lblStreet
             // 
             this.lblStreet.AutoSize = true;
@@ -302,7 +253,7 @@ namespace Retail_sys
             this.lblStreet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblStreet.Location = new System.Drawing.Point(325, 120);
             this.lblStreet.Name = "lblStreet";
-            this.lblStreet.Size = new System.Drawing.Size(92, 16);
+            this.lblStreet.Size = new System.Drawing.Size(93, 16);
             this.lblStreet.TabIndex = 105;
             this.lblStreet.Text = "Item Quantity : ";
             // 
@@ -347,7 +298,7 @@ namespace Retail_sys
             this.LblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.LblEmail.Location = new System.Drawing.Point(325, 152);
             this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Size = new System.Drawing.Size(90, 16);
+            this.LblEmail.Size = new System.Drawing.Size(91, 16);
             this.LblEmail.TabIndex = 99;
             this.LblEmail.Text = "Item Price (£): ";
             // 
@@ -370,7 +321,7 @@ namespace Retail_sys
             this.lblSurName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblSurName.Location = new System.Drawing.Point(339, 85);
             this.lblSurName.Name = "lblSurName";
-            this.lblSurName.Size = new System.Drawing.Size(81, 16);
+            this.lblSurName.Size = new System.Drawing.Size(82, 16);
             this.lblSurName.TabIndex = 97;
             this.lblSurName.Text = "Item Name : ";
             // 
@@ -411,6 +362,58 @@ namespace Retail_sys
             this.btnNewItemCreation.Text = "Create New Item";
             this.btnNewItemCreation.UseVisualStyleBackColor = false;
             this.btnNewItemCreation.Click += new System.EventHandler(this.btnNewItemCreation_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Black;
+            this.label14.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label14.Location = new System.Drawing.Point(369, 268);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(168, 23);
+            this.label14.TabIndex = 80;
+            this.label14.Text = "Delete Item\'s Record";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
+            // 
+            // btnDeletItemRec
+            // 
+            this.btnDeletItemRec.BackColor = System.Drawing.Color.Black;
+            this.btnDeletItemRec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeletItemRec.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletItemRec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDeletItemRec.Location = new System.Drawing.Point(323, 337);
+            this.btnDeletItemRec.Name = "btnDeletItemRec";
+            this.btnDeletItemRec.Size = new System.Drawing.Size(250, 23);
+            this.btnDeletItemRec.TabIndex = 81;
+            this.btnDeletItemRec.Text = "Delete Item\'s Information";
+            this.btnDeletItemRec.UseVisualStyleBackColor = false;
+            this.btnDeletItemRec.Click += new System.EventHandler(this.btnDeletItemRec_Click);
+            // 
+            // txtdeleteitemid
+            // 
+            this.txtdeleteitemid.BackColor = System.Drawing.Color.Black;
+            this.txtdeleteitemid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtdeleteitemid.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdeleteitemid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtdeleteitemid.Location = new System.Drawing.Point(431, 303);
+            this.txtdeleteitemid.Name = "txtdeleteitemid";
+            this.txtdeleteitemid.Size = new System.Drawing.Size(142, 23);
+            this.txtdeleteitemid.TabIndex = 91;
+            this.txtdeleteitemid.TextChanged += new System.EventHandler(this.txtdeleteitemid_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(326, 303);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 15);
+            this.label1.TabIndex = 94;
+            this.label1.Text = "Input Item\'s ID: ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // StaffViewStockForm
             // 
@@ -460,12 +463,9 @@ namespace Retail_sys
 
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.TextBox txtdeleteitemid;
         private System.Windows.Forms.TextBox txteditstockid;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnDeletItemRec;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnReturnMenu;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtNewQuantity;
@@ -476,7 +476,6 @@ namespace Retail_sys
         private System.Windows.Forms.Button btnShowallStock;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblStreet;
         private System.Windows.Forms.TextBox TxtPrice;
         private System.Windows.Forms.TextBox TxtQuantity;
@@ -487,5 +486,9 @@ namespace Retail_sys
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnNewItemCreation;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnDeletItemRec;
+        private System.Windows.Forms.TextBox txtdeleteitemid;
+        private System.Windows.Forms.Label label1;
     }
 }

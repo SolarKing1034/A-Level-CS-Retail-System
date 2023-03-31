@@ -330,5 +330,20 @@ namespace Retail_sys
         {
 
         }
+
+        private void txtdeleteitemid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
