@@ -143,6 +143,7 @@ namespace Retail_sys
                 MessageBox.Show("Items Purchased!");
                 string LogoutMessage = "Would You Like A Receipt웃 Selecting No Will Return To Main Menu The System";
                 string title = "Purchase Successful";
+                SQLiteDataReader.Close();
                 MessageBoxButtons CustomeButtons = MessageBoxButtons.YesNo;
                 DialogResult mboxconstruction = MessageBox.Show(LogoutMessage, title, CustomeButtons);
                 if (mboxconstruction == DialogResult.Yes)
